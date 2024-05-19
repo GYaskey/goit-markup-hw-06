@@ -1,5 +1,5 @@
 body {
-    font-family: "Roboto", "Raleway", sans-serif;
+    font-family: "Roboto", sans-serif;
     color: #434455;
     font-size: 16px; 
     line-height: 1.5;
@@ -20,10 +20,12 @@ body {
     text-decoration: underline;
 }
 
+.contacts{
+    font-style: normal;
+}
 .contacts a {
     color: #434455;
     text-decoration: none;
-    font-style: normal;
     letter-spacing: 0.02em;
 }
 .contacts a:hover {
@@ -110,7 +112,7 @@ body {
 }
 
 .team-tile {
-    color: #ffffff;
+    background-color: #ffffff;
 }
 
 .team-description {

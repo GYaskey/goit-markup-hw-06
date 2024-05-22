@@ -8,30 +8,44 @@ body {
         background-color: #ffffff;
 }
 
-/* button {
-    cursor: pointer;
-    font-family: inherit;
+h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
 }
 
-ul,
-ol {
+ul,ol {
+    margin: 0;
+    padding: 0;
     list-style-type: none;
 }
 
-a {
-    text-decoration: none;
-    color: currentColor;
+button {
+    border: none;  
 }
-
-address {
-    font-style: normal;
-} */
 
 /* #endregion /Base */
 
 /* #region Component */
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 
+.container {
+    width: 1158px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
 
 .logo {
     font-family: "Raleway", sans-serif;
@@ -77,6 +91,7 @@ address {
 /* #region Header */
 .header {
     background-color: #ffffff;
+    padding: 20px 0;
 }
 
 .header-nav {}
@@ -124,7 +139,10 @@ address {
 .hero {
     background-color: #2E2F42;
     text-align: center;
+    padding: 188px 0;
 }
+
+.hero-container {}
 
 .hero-title {
     color: #ffffff;
@@ -143,16 +161,35 @@ address {
     line-height: 1.5;
     cursor: pointer;
     letter-spacing: 0.04em;
+    width: 169px;
+    height: 56px;
+    border-radius: 4px;
 }
 
-.order-button:hover,
+
 .order-button:focus {
     background-color: #404BBF;
+}
+
+.order-button:not(:hover) {
+    background-color: #4D5AE5;
 }
 /* #endregion /Hero */
 
 /* #region Features */
-.features {}
+.features {
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+.features-container {
+    
+}
+
+.features-container .feature-list {
+    display: flex;
+    gap: 24px;
+}
 
 .feature-title {}
 
@@ -168,11 +205,19 @@ address {
 /* #region Team */
 .team {
     background-color: #F4F4FD;
+    padding: 120px 0;
+}
+
+.team-container {}
+
+.team-container .team-list {
+    display: flex;
+    gap: 24px;
 }
 
 .team-title {}
 
-.team-list {}
+ {}
 
 .team-item {
     background-color: #ffffff;
@@ -189,7 +234,12 @@ address {
 /* #endregion /Team */
 
 /* #region Portfolio */
-.portfolio {}
+.portfolio {
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+.portfolio-container {}
 
 .portfolio-title {}
 
@@ -206,7 +256,10 @@ address {
 .footer {
     color: #ffffff;
     background-color: #2E2F42;
+    padding: 100px 0;
 }
+
+.footer-container {}
 
 .footer-text {
     color: #F4F4FD;

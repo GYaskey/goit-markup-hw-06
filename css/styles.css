@@ -199,7 +199,7 @@ img {
     background-image: linear-gradient(to bottom,
         rgba(46, 47, 66, 0.70),
         rgba(46, 47, 66, 0.70)), 
-        url(/images/people-office.jpeg);
+        url(../images/people-office.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

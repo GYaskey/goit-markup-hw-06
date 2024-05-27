@@ -491,12 +491,13 @@ img {
 .footer-socials {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    
 }
 
 .footer-social-text {
     font-weight: 500;
     letter-spacing: 0.32px;
+    margin-bottom: 16px;
 }
 
 .footer-social-list {

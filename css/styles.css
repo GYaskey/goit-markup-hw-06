@@ -633,10 +633,13 @@ img {
     justify-content: center;
     align-items: center;
     background: rgba(46, 47, 66, 0.40);
+    opacity: 0;
+    pointer-events: none;
 }
 
 .modal-overlay.is-open {
-
+    opacity: 1;
+    pointer-events: auto;
 }
 
 .modal {

@@ -637,7 +637,7 @@ img {
     pointer-events: none;
 }
 
-.modal-overlay.is-open {
+.modal-overlay .is-open {
     opacity: 1;
     pointer-events: auto;
 }

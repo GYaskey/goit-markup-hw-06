@@ -17,7 +17,11 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <link href="./css/styles.css" rel="stylesheet" />
+    <link href="./css/reset.css" rel="stylesheet" />
+    <link href="./css/common.css" rel="stylesheet" />
+    <link href="./css/mobile.css" rel="stylesheet" />
+    <link href="./css/tablet.css" rel="stylesheet" />
+    <link href="./css/desktop.css" rel="stylesheet" />
   </head>
   <body>
     <!-- #region Header -->
@@ -43,6 +47,7 @@
             </li>
           </ul>
         </nav>
+
         <address class="header-contacts">
           <ul class="header-contact-list">
             <li class="header-contact-item">
@@ -57,6 +62,15 @@
             </li>
           </ul>
         </address>
+        <button
+          class="menu-btn js-menu-btn"
+          type="button"
+          aria-label="Open mobile menu button"
+        >
+          <svg class="menu-btn-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <!-- #endregion /Header -->
@@ -134,7 +148,11 @@
             <li class="team-item">
               <img
                 class="team-pic"
-                src="./images/mark.jpeg"
+                srcset="
+                  ./images/team/mark@1x.jpg 1x,
+                  ./images/team/mark@2x.jpg 2x
+                "
+                src="./images/team/mark@1x.jpg"
                 width="264"
                 height="260"
                 alt="Mark Guerrero photo"
@@ -201,7 +219,11 @@
             <li class="team-item">
               <img
                 class="team-pic"
-                src="./images/tom.jpeg"
+                srcset="
+                  ./images/team/tom@1x.jpg 1x,
+                  ./images/team/tom@2x.jpg 2x
+                "
+                src="./images/team/tom@1x.jpg"
                 width="264"
                 height="260"
                 alt="Tom Ford photo"
@@ -268,7 +290,11 @@
             <li class="team-item">
               <img
                 class="team-pic"
-                src="./images/camila.jpeg"
+                srcset="
+                  ./images/team/camila@1x.jpg 1x,
+                  ./images/team/camila@2x.jpg 2x
+                "
+                src="./images/team/camila@1x.jpg"
                 width="264"
                 height="260"
                 alt="Camila Garcia photo"
@@ -335,7 +361,11 @@
             <li class="team-item">
               <img
                 class="team-pic"
-                src="./images/daniel.jpeg"
+                srcset="
+                  ./images/team/daniel@1x.jpg 1x,
+                  ./images/team/daniel@2x.jpg 2x
+                "
+                src="./images/team/daniel@1x.jpg"
                 width="264"
                 height="260"
                 alt="Daniel Wilson photo"
@@ -411,7 +441,12 @@
             <li class="portfolio-item">
               <div class="overlay-wrap">
                 <img
-                  src="./images/banking-app.jpg"
+                  class="portfolio-image"
+                  srcset="
+                    ./images/portfolio/banking@1x.jpg 1x,
+                    ./images/portfolio/banking@2x.jpg 2x
+                  "
+                  src="./images/portfolio/banking@1x.jpg"
                   width="360"
                   height="300"
                   alt="Banking App preview"
@@ -430,7 +465,12 @@
             <li class="portfolio-item">
               <div class="overlay-wrap">
                 <img
-                  src="./images/cashless-payment.jpg"
+                  class="portfolio-image"
+                  srcset="
+                    ./images/portfolio/payment@1x.jpg 1x,
+                    ./images/portfolio/payment@2x.jpg 2x
+                  "
+                  src="./images/portfolio/payment@1x.jpg"
                   width="360"
                   height="300"
                   alt="Cashless Payment preview"
@@ -449,7 +489,12 @@
             <li class="portfolio-item">
               <div class="overlay-wrap">
                 <img
-                  src="./images/meditation-app.jpg"
+                  class="portfolio-image"
+                  srcset="
+                    ./images/portfolio/meditation@1x.jpg 1x,
+                    ./images/portfolio/meditation@2x.jpg 2x
+                  "
+                  src="./images/portfolio/meditation@1x.jpg"
                   width="360"
                   height="300"
                   alt="Meditation App preview"
@@ -468,7 +513,12 @@
             <li class="portfolio-item">
               <div class="overlay-wrap">
                 <img
-                  src="./images/taxi-service.jpg"
+                  class="portfolio-image"
+                  srcset="
+                    ./images/portfolio/taxi@1x.jpg 1x,
+                    ./images/portfolio/taxi@2x.jpg 2x
+                  "
+                  src="./images/portfolio/taxi@1x.jpg"
                   width="360"
                   height="300"
                   alt="Taxi Service preview"
@@ -487,7 +537,12 @@
             <li class="portfolio-item">
               <div class="overlay-wrap">
                 <img
-                  src="./images/screen-illustrations.jpg"
+                  class="portfolio-image"
+                  srcset="
+                    ./images/portfolio/illustration@1x.jpg 1x,
+                    ./images/portfolio/illustration@2x.jpg 2x
+                  "
+                  src="./images/portfolio/illustration@1x.jpg"
                   width="360"
                   height="300"
                   alt="Screen Illustrations preview"
@@ -508,7 +563,12 @@
             <li class="portfolio-item">
               <div class="overlay-wrap">
                 <img
-                  src="./images/online-courses.jpg"
+                  class="portfolio-image"
+                  srcset="
+                    ./images/portfolio/courses@1x.jpg 1x,
+                    ./images/portfolio/courses@2x.jpg 2x
+                  "
+                  src="./images/portfolio/courses@1x.jpg"
                   width="360"
                   height="300"
                   alt="Online Courses preview"
@@ -622,8 +682,101 @@
       </div>
     </footer>
     <!-- #endregion /Footer -->
+
+    <!-- #region Mobile menu -->
+    <div class="menu-container">
+      <button
+        class="menu-btn-close menu-btn js-menu-btn"
+        aria-label="Close menu button"
+      >
+        <svg class="menu-close-icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <ul class="menu-mobile-list">
+        <li class="menu-mobile-item">
+          <a href="" class="menu-mobile-link selected">Studio</a>
+        </li>
+        <li class="menu-mobile-item">
+          <a href="" class="menu-mobile-link">Portfolio</a>
+        </li>
+        <li class="menu-mobile-item">
+          <a href="" class="menu-mobile-link">Contacts</a>
+        </li>
+      </ul>
+      <ul class="mobile-cnts-list">
+        <li class="mobile-cnts-item">
+          <a class="mobile-cnts-link" href="tel:+110001111111"
+            >+11 (000) 111-11-11</a
+          >
+        </li>
+        <li class="mobile-cnts-item">
+          <a class="mobile-cnts-link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="mobile-social-list">
+        <li class="mobile-social-icon">
+          <a
+            class="mobile-social-link"
+            href="https://instagram.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Link Instagram"
+          >
+            <svg class="mobile-social-svg" width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-social-icon">
+          <a
+            class="mobile-social-link"
+            href="https://x.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Link Twitter"
+          >
+            <svg class="mobile-social-svg" width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-social-icon">
+          <a
+            class="mobile-social-link"
+            href="https://facebook.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Link Facebook"
+          >
+            <svg class="mobile-social-svg" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-social-icon">
+          <a
+            class="mobile-social-link"
+            href="https://linkedin.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Link Linkedin"
+          >
+            <svg class="mobile-social-svg" width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <script src="./js/menu.js"></script>
+
+    <!-- #endregion /Mobile menu -->
+
     <!-- #region Modal -->
-    <div class="modal-overlay is-open">
+    <div class="modal-overlay">
       <div class="modal">
         <button class="modal-close-button" type="button">
           <svg class="modal-close-icon" width="8" height="8">
@@ -688,8 +841,7 @@
               id="user-comment"
               class="modal-form-comment"
               placeholder="Text input"
-            >
-            </textarea>
+            ></textarea>
           </div>
 
           <div class="modal-checkbox-area">
@@ -707,8 +859,10 @@
                   <use href="./images/icons.svg#icon-check-mark"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the
-              <a href="#" class="checkbox-pp-link">Privacy Policy</a>
+              <span class="modal-checkbox-label-text">
+                I accept the terms and conditions of the
+                <a href="#" class="checkbox-pp-link">Privacy Policy</a>
+              </span>
             </label>
           </div>
           <button class="modal-send-button" type="submit">Send</button>
@@ -716,5 +870,22 @@
       </div>
     </div>
     <!-- #endregion /Modal -->
+    <!-- #region Modal script -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const orderButton = document.querySelector(".order-button");
+        const modalOverlay = document.querySelector(".modal-overlay");
+        const closeButton = document.querySelector(".modal-close-button");
+
+        orderButton.addEventListener("click", function () {
+          modalOverlay.classList.add("is-open");
+        });
+
+        closeButton.addEventListener("click", function () {
+          modalOverlay.classList.remove("is-open");
+        });
+      });
+    </script>
+    <!-- #endregion Modal script -->
   </body>
 </html>

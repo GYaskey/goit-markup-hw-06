@@ -1,0 +1,135 @@
+@media screen and (min-width: 1158px) {
+  .container {
+    width: 1158px;
+    padding: 0 15px;
+  }
+
+  .logo {
+    margin-right: 76px;
+  }
+
+  .header-contact-list {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    font-style: normal;
+    padding: 24px 0;
+  }
+
+  .header-contacts-link {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+  }
+
+  /* Hero start */
+
+  .hero {
+    padding: 188px 0;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/Hero/people-office_desk@1x.jpg");
+    max-width: 1440px;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url("../images/Hero/people-office_desk@2x.jpg");
+    }
+  }
+
+  .hero-title {
+    margin-bottom: 48px;
+  }
+
+  .modal {
+  }
+
+  /* Feature start */
+
+  .features {
+    padding: 120px 0;
+  }
+
+  .icon-box {
+    display: flex;
+    width: 264px;
+    height: 112px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    border: 1px solid #8e8f99;
+    background: #f4f4fd;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+
+  .feature-item {
+    width: 264px;
+  }
+
+  .feature-heading {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.4px;
+  }
+
+  .feature-description {
+    font-weight: 400;
+  }
+
+  /* Team start */
+
+  .team {
+    padding: 120px 0;
+  }
+
+  /* Portfolio start */
+
+  .portfolio {
+    padding: 120px 0;
+  }
+
+  .portfolio-list {
+    row-gap: 48px;
+  }
+
+  .portfolio-item {
+    width: 360px;
+    height: 420px;
+  }
+
+  /* Footer start */
+
+  .footer {
+    padding: 100px 0;
+  }
+
+  .footer-container {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .footer-logo-text {
+    margin-right: 120px;
+  }
+
+  .footer-container {
+    column-gap: 0;
+  }
+
+  .footer-socials {
+    margin-right: 80px;
+  }
+}

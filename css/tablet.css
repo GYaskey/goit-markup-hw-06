@@ -135,7 +135,7 @@
   .feature-list {
     display: flex;
     row-gap: 72px;
-    gap: 24px;
+    column-gap: 24px;
     flex-wrap: wrap;
   }
   .feature-item {
